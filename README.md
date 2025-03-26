@@ -33,6 +33,7 @@ This project turns an ESP32 into a Bluetooth keyboard with a web-based interface
    - Select your ESP32 board under `Tools > Board` (e.g., "ESP32 Dev Module").
    - Connect your ESP32 via USB and select the correct port under `Tools > Port`.
    - Click `Upload` to flash the code.
+   - or via esptool : esptool.py --chip esp32 --port COMx --baud 115200 write_flash 0x0 ESP32-BT-Keyboard.bin
 
 3. **Pair with Bluetooth**:
    - After uploading, the ESP32 will appear as a Bluetooth device on your computer or phone.
